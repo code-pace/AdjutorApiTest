@@ -13,7 +13,7 @@ This project contains automated tests for the Lendsqr Adjutor API using Rest Ass
 ***Installation***
 1. Clone the Repository:
 ``
-git clone [your-repository-url]
+git clone https://github.com/code-pace/AdjutorApiTest.git
 ``
 2. Navigate to the Project Directory:
 ``
@@ -30,6 +30,7 @@ mvn clean install
 mvn test
 ``
 This command will download all necessary dependencies and compile the project.
+
 **Test Coverage**
 ***Here's a brief overview of what's currently tested:***
 - Validation: Initialize BVN Consent, Complete Consent and get BVN Details
