@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" thread-count="1" parallel="tests">
+    <parameter name="url" value="https://adjutor.lendsqr.com/v2/"/>
+<!--    <parameter name="url" value="http://localhost:8080/"/>-->
+    <parameter name="koloUrl" value="https://app.kolo.finance/"/>
+    <parameter name="env" value="staging"/>
+    <parameter name="bvn" value="22222222222"/>
+    <parameter name="api_token" value="ENTER YOUR API_TOKEN"/>
+
+    <test name="Validation Test" preserve-order="true">
+        <classes>
+            <class name="adjutorApiTest.ValidationTest">
+                <methods>
+                    <include name="initializeBvnContentTest"/>
+                    <include name="completeConsentAndGetBvnDetailsTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="CreditBureaus Test" preserve-order="true">
+        <classes>
+            <class name="adjutorApiTest.CreditBureausTest">
+                <methods>
+                    <include name="getCreditReportFromCrcCreditBureauTest"/>
+                    <include name="getCreditReportFromFirstCreditBureauTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Decisioning Test" preserve-order="true">
+        <classes>
+            <class name="adjutorApiTest.DecisioningTest">
+                <methods>
+                    <include name="getDecisionModelsTest"/>
+                    <include name="getDecisionModelDetailsTest"/>
+                    <include name="oraculiBorrowerScoringTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Embedded Loans and Payments Test" preserve-order="true">
+        <classes>
+            <class name="adjutorApiTest.EmbeddedLoanAndPaymentsTest">
+                <methods>
+                    <include name="getLoanProductsTest"/>
+                    <include name="initializeLoanApplicationTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Data for Lenders Test" preserve-order="true">
+        <classes>
+            <class name="adjutorApiTest.DataForLendersTest">
+                <methods>
+                    <include name="optionsTest"/>
+                    <include name="usersTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Operational Services Test" preserve-order="true">
+        <classes>
+            <class name="adjutorApiTest.OperationalServicesTest">
+                <methods>
+                    <include name="getAdjutorServicePricingTest"/>
+                    <include name="getWalletTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Direct Debit Test" preserve-order="true">
+        <classes>
+            <class name="adjutorApiTest.DirectDebitTest">
+                <methods>
+                    <include name="getAllBanksTest"/>
+                    <include name="getDetailsOfABankTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

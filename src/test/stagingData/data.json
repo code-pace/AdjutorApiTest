@@ -1,0 +1,86 @@
+{
+  "initializeBvnConsent" : {
+    "contact": "08012345678"
+  },
+  "completeConsentAndGenerateBvnDetails": {
+    "otp": "623553"
+  },
+  "getCreditReportFromCRC": {},
+  "getCreditReportFromFirstCentral": {},
+  "getDecisionModels": {},
+  "getDecisionModelsDetails": {},
+  "oraculiBorrowerScoring": {
+    "gender": "Female",
+    "marital_status": "Single",
+    "age": "21 - 30",
+    "location": "lagos",
+    "no_of_dependent": "0",
+    "type_of_residence": "Rented Apartment",
+    "educational_attainment": "BSc, HND and Other Equivalent",
+    "employment_status": "Employed",
+    "sector_of_employment": "Other Financial",
+    "tier": "Tier 1",
+    "monthly_net_income": "100,000 - 199,999",
+    "employer_category": "Private Company",
+    "bvn": "22233312345",
+    "phone_number": "08012345678",
+    "total_years_of_experience": 5,
+    "time_with_current_employer": 2,
+    "previous_lendsqr_loans": 3,
+    "code": "9dppknauu",
+    "phone": "08012345678",
+    "bvn_phone": "08012345678",
+    "office_email": "adojohnsule@lendsqr.com",
+    "personal_email": "adojohnsule@lendsqr.com",
+    "amount": 10000
+  },
+  "getLoanProducts": {},
+  "initializeLoanApp" : {
+    "product_id": "c9f0f895fb98ab9159f51fd0297e236d",
+    "meta": {
+      "email": "froggy@lendsqr.com",
+      "phone_number": "08089722636"
+    }
+  },
+  "options": {},
+  "users": {},
+  "getAdjutorServicesPricing": {},
+  "getWallet": {},
+  "getAllBanks": {},
+  "getDetailsOfBank": {},
+  "exchangeCode": {
+    "redirect_uri": "https://starcash.lsq.app",
+    "grant_type": "authorization_code",
+    "code": "JMab8BXnAhnCL6J1"
+  },
+  "auth": {
+    "email": "api@example.com",
+    "password": "Test123##"
+  },
+  "createNewCustomer": {
+    "phone_number": "07123456789",
+    "bvn": "",
+    "bvn_phone_number": "07123456789",
+    "dob": "1999-11-11",
+    "email": "",
+    "account_number": "",
+    "bank_code": "",
+    "state": "",
+    "lga": "",
+    "city": "Test City",
+    "address": "123 Test St",
+    "photo_url": "http://example.com/photo.jpg",
+    "documents": [
+      {
+        "url": "http://example.com/document1.pdf",
+        "type_id": 1,
+        "sub_type_id": 2
+      },
+      {
+        "url": "http://example.com/document2.pdf",
+        "type_id": 3,
+        "sub_type_id": 4
+      }
+    ]
+  }
+}
